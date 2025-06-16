@@ -1,51 +1,50 @@
-# Math Utilities
+# Math Utilities Documentation
 
 A demonstration project for JSDoc documentation generation using better-docs theme.
 
 ## Documentation
 
-The documentation is automatically generated and deployed to GitHub Pages. You can view it at:
-https://manhcuongdtbk.github.io/jsdoc-experiment/
+The documentation is available at: https://manhcuongdtbk.github.io/jsdoc-experiment/
 
 ## Installation
 
 ```bash
-# Install dependencies
 pnpm install
 ```
 
 ## Generating Documentation
 
-To generate documentation locally:
+To generate the documentation locally:
 
 ```bash
 pnpm run docs
 ```
 
-This will create a `docs` directory with the generated documentation. You can open `docs/index.html` in your web browser to view it.
+This will create a `docs` directory with the generated documentation.
 
 ## Viewing Documentation
 
-The generated documentation includes:
+After generating the documentation, you can:
+
+1. Open `docs/index.html` in your web browser to view the documentation locally
+2. Visit https://manhcuongdtbk.github.io/jsdoc-experiment/ to view the documentation online
+
+The documentation includes:
 - Function descriptions
 - Parameter types
 - Return value types
 - Search functionality
 - Source code links
-- Interactive tutorials
+- Tutorials and examples
 
-## Available Functions
+## Development
 
-- `sum(a, b)`: Adds two numbers together
-- `subtract(a, b)`: Subtracts b from a
-- `multiply(a, b)`: Multiplies two numbers
-- `divide(a, b)`: Divides a by b
-- `power(base, exponent)`: Raises base to the power of exponent
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+The project uses:
+- JSDoc 4 for documentation generation
+- better-docs theme for modern UI
+- GitHub Pages for hosting
+- GitHub Actions for automated deployment
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT
