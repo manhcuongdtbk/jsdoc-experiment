@@ -1,6 +1,11 @@
-# JSDoc Experiment
+# Math Utilities
 
-A simple project demonstrating JSDoc documentation generation using the better-docs theme.
+A demonstration project for JSDoc documentation generation using better-docs theme.
+
+## Documentation
+
+The documentation is automatically generated and deployed to GitHub Pages. You can view it at:
+https://github.com/manhcuongdtbk/jsdoc-experiment
 
 ## Installation
 
@@ -9,33 +14,38 @@ A simple project demonstrating JSDoc documentation generation using the better-d
 pnpm install
 ```
 
-## Available Functions
+## Generating Documentation
 
-- `sum(a, b)`: Adds two numbers together
-- `subtract(a, b)`: Subtracts the second number from the first
-- `multiply(a, b)`: Multiplies two numbers together
-- `divide(a, b)`: Divides the first number by the second
-- `power(a, b)`: Raises a number to the power of another
-
-## Documentation
-
-### Generating Documentation
-
-Run the following command to generate the documentation:
+To generate documentation locally:
 
 ```bash
 pnpm run docs
 ```
 
-This will create a `docs` directory with the generated documentation.
+This will create a `docs` directory with the generated documentation. You can open `docs/index.html` in your web browser to view it.
 
-### Viewing Documentation
+## Viewing Documentation
 
-After generating the documentation, open `docs/index.html` in your web browser to view it.
-
-The documentation includes:
+The generated documentation includes:
 - Function descriptions
-- Parameter types and descriptions
-- Return value types and descriptions
+- Parameter types
+- Return value types
 - Search functionality
 - Source code links
+- Interactive tutorials
+
+## Available Functions
+
+- `sum(a, b)`: Adds two numbers together
+- `subtract(a, b)`: Subtracts b from a
+- `multiply(a, b)`: Multiplies two numbers
+- `divide(a, b)`: Divides a by b
+- `power(base, exponent)`: Raises base to the power of exponent
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
