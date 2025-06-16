@@ -1,0 +1,86 @@
+/* Custom styles for JSDoc documentation */
+
+/* Improve code block readability */
+pre.prettyprint {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Style function signatures */
+.signature {
+    font-family: 'Fira Code', monospace;
+    color: #2c3e50;
+}
+
+/* Improve parameter tables */
+.params {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.params th {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.params td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Style examples section */
+.example {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Improve navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Style search box */
+.search-input {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Improve headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Style links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Improve mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    pre.prettyprint {
+        font-size: 0.8rem;
+    }
+}
