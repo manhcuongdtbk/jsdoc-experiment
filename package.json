@@ -9,7 +9,7 @@
   "packageManager": "pnpm@9.15.9",
   "scripts": {
     "clean": "rm -rf docs",
-    "docs": "pnpm run clean && jsdoc -c jsdoc.config.js",
+    "docs": "jsdoc -c jsdoc.config.js",
     "test": "node --test main.test.js"
   },
   "keywords": [
@@ -22,12 +22,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/jsdoc-experiment.git"
+    "url": "git+https://github.com/manhcuongdtbk/jsdoc-experiment.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/jsdoc-experiment/issues"
+    "url": "https://github.com/manhcuongdtbk/jsdoc-experiment/issues"
   },
-  "homepage": "https://github.com/yourusername/jsdoc-experiment#readme",
+  "homepage": "https://manhcuongdtbk.github.io/jsdoc-experiment/",
   "devDependencies": {
     "better-docs": "^2.7.3",
     "jsdoc": "^4.0.4"

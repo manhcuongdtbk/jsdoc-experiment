@@ -37,10 +37,14 @@ jobs:
 
       - name: Build documentation
         run: |
-          pnpm run docs
-          # Ensure index.html exists in the docs directory
-          if [ ! -f "docs/index.html" ]; then
-            echo "Error: docs/index.html not found"
+          # Clean docs directory
+          rm -rf docs
+          # Generate documentation
+          jsdoc -c jsdoc.config.js
+          # Verify docs were generated
+          if [ ! -f "docs/jsdoc-experiment/1.0.0/index.html" ]; then
+            echo "Error: Documentation was not generated correctly"
+            ls -la docs/
             exit 1
           fi
 
