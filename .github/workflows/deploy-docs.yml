@@ -43,11 +43,14 @@ jobs:
           echo "Documentation directory structure:"
           find docs -type f
           # Verify documentation was generated
-          if [ ! -f "docs/index.html" ]; then
+          if [ ! -f "docs/jsdoc-experiment/1.0.0/index.html" ]; then
             echo "Error: Documentation was not generated correctly"
             ls -la docs/
             exit 1
           fi
+          # Move files to the root of docs directory
+          mv docs/jsdoc-experiment/1.0.0/* docs/
+          rm -rf docs/jsdoc-experiment
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
