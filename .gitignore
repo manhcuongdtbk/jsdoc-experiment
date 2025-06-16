@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Generated documentation
-docs/
-
 # OS files
 .DS_Store
 Thumbs.db

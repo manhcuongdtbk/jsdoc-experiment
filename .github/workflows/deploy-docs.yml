@@ -39,8 +39,11 @@ jobs:
           rm -rf docs
           # Generate documentation
           pnpm exec jsdoc -c jsdoc.config.js
+          # Debug: Show directory structure
+          echo "Documentation directory structure:"
+          find docs -type f
           # Verify documentation was generated
-          if [ ! -f "docs/jsdoc-experiment/1.0.0/index.html" ]; then
+          if [ ! -f "docs/index.html" ]; then
             echo "Error: Documentation was not generated correctly"
             ls -la docs/
             exit 1

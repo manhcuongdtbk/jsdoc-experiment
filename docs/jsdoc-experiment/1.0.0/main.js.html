@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math Utilities Documentation main.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Math Utilities Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-advanced-usage.html">
+                                advanced-usage
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-getting-started.html">
+                                getting-started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-index_.html">
+                                index
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-project-history.html">
+                                project-history
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-math.html">math</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>main.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module math
+ * @description A collection of mathematical utility functions
+ */
+
+/**
+ * @function sum
+ * @description Adds two numbers together
+ * @param {number} a - The first number
+ * @param {number} b - The second number
+ * @returns {number} The sum of a and b
+ * @example
+ * sum(2, 3) // returns 5
+ * sum(-1, 1) // returns 0
+ */
+export const sum = (a, b) => a + b;
+
+/**
+ * @function subtract
+ * @description Subtracts the second number from the first
+ * @param {number} a - The first number
+ * @param {number} b - The second number
+ * @returns {number} The difference between a and b
+ * @example
+ * subtract(5, 3) // returns 2
+ * subtract(1, 1) // returns 0
+ */
+export const subtract = (a, b) => a - b;
+
+/**
+ * @function multiply
+ * @description Multiplies two numbers together
+ * @param {number} a - The first number
+ * @param {number} b - The second number
+ * @returns {number} The product of a and b
+ * @example
+ * multiply(2, 3) // returns 6
+ * multiply(-2, 3) // returns -6
+ */
+export const multiply = (a, b) => a * b;
+
+/**
+ * @function divide
+ * @description Divides the first number by the second
+ * @param {number} a - The first number (dividend)
+ * @param {number} b - The second number (divisor)
+ * @returns {number} The quotient of a divided by b
+ * @throws {Error} If b is 0 (division by zero)
+ * @example
+ * divide(6, 2) // returns 3
+ * divide(5, 2) // returns 2.5
+ * @example
+ * // This will throw an error
+ * divide(5, 0) // throws Error: Division by zero
+ */
+export const divide = (a, b) => {
+  if (b === 0) throw new Error('Division by zero');
+  return a / b;
+};
+
+/**
+ * @function power
+ * @description Raises a number to the power of another
+ * @param {number} a - The base number
+ * @param {number} b - The exponent
+ * @returns {number} The result of a raised to the power of b
+ * @example
+ * power(2, 3) // returns 8
+ * power(2, 0.5) // returns 1.4142135623730951
+ */
+export const power = (a, b) => a ** b;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>
