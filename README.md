@@ -1,10 +1,13 @@
 # Math Utilities Documentation
 
+[![Documentation](https://img.shields.io/badge/docs-latest-blue)](https://manhcuongdtbk.github.io/jsdoc-experiment/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A demonstration project for JSDoc documentation generation using better-docs theme.
 
 ## Documentation
 
-The documentation is available at: https://manhcuongdtbk.github.io/jsdoc-experiment/
+📚 **Live Documentation**: [https://manhcuongdtbk.github.io/jsdoc-experiment/](https://manhcuongdtbk.github.io/jsdoc-experiment/)
 
 ## Installation
 
@@ -27,7 +30,7 @@ This will create a `docs` directory with the generated documentation.
 After generating the documentation, you can:
 
 1. Open `docs/index.html` in your web browser to view the documentation locally
-2. Visit https://manhcuongdtbk.github.io/jsdoc-experiment/ to view the documentation online
+2. Visit [https://manhcuongdtbk.github.io/jsdoc-experiment/](https://manhcuongdtbk.github.io/jsdoc-experiment/) to view the documentation online
 
 The documentation includes:
 - Function descriptions
