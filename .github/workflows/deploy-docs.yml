@@ -40,7 +40,7 @@ jobs:
           # Clean docs directory
           rm -rf docs
           # Generate documentation
-          pnpm exec jsdoc -c jsdoc.config.mjs
+          pnpm exec jsdoc -c jsdoc.config.js
           # Verify docs were generated
           if [ ! -f "docs/jsdoc-experiment/1.0.0/index.html" ]; then
             echo "Error: Documentation was not generated correctly"

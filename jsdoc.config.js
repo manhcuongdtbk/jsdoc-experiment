@@ -4,7 +4,7 @@
  */
 
 /** @type {import('jsdoc').Config} */
-export default {
+module.exports = {
   // Source files to include in documentation generation
   source: {
     include: ["main.js"], // List of files or directories to include
