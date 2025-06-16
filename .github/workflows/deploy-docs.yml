@@ -36,10 +36,18 @@ jobs:
         run: pnpm install
 
       - name: Build documentation
-        run: pnpm run docs
+        run: |
+          pnpm run docs
+          # Ensure index.html exists in the docs directory
+          if [ ! -f "docs/index.html" ]; then
+            echo "Error: docs/index.html not found"
+            exit 1
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          static_site_generator: custom
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

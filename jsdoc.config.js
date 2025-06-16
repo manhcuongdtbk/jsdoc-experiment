@@ -30,7 +30,9 @@ module.exports = {
     package: "./package.json", // Path to package.json for project info
     staticFiles: {
       include: ["./static"] // Include static files in the output
-    }
+    },
+    // Add base URL for GitHub Pages
+    baseUrl: '/jsdoc-experiment/'
   },
   // Template-specific options
   templates: {
@@ -51,7 +53,7 @@ module.exports = {
       navigationLinks: [
         {
           label: 'GitHub',
-          href: 'https://github.com/yourusername/jsdoc-experiment'
+          href: 'https://github.com/manhcuongdtbk/jsdoc-experiment'
         }
       ]
     }

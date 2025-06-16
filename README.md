@@ -5,7 +5,7 @@ A demonstration project for JSDoc documentation generation using better-docs the
 ## Documentation
 
 The documentation is automatically generated and deployed to GitHub Pages. You can view it at:
-https://github.com/manhcuongdtbk/jsdoc-experiment
+https://manhcuongdtbk.github.io/jsdoc-experiment/
 
 ## Installation
 
