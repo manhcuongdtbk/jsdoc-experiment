@@ -1,19 +1,35 @@
 {
   "name": "jsdoc-experiment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A demonstration project for JSDoc documentation generation using better-docs theme",
+  "main": "main.js",
   "engines": {
     "node": "22.x"
   },
   "packageManager": "pnpm@9.15.9",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf docs",
+    "docs": "pnpm run clean && jsdoc -c jsdoc.config.js",
+    "test": "node --test main.test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "jsdoc",
+    "documentation",
+    "better-docs",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/jsdoc-experiment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/jsdoc-experiment/issues"
+  },
+  "homepage": "https://github.com/yourusername/jsdoc-experiment#readme",
   "devDependencies": {
+    "better-docs": "^2.7.3",
     "jsdoc": "^4.0.4"
   }
 }
