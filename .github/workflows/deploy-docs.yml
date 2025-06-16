@@ -2,9 +2,7 @@ name: Deploy Documentation
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -41,7 +39,7 @@ jobs:
           rm -rf docs
           # Generate documentation
           pnpm exec jsdoc -c jsdoc.config.js
-          # Verify docs were generated
+          # Verify documentation was generated
           if [ ! -f "docs/jsdoc-experiment/1.0.0/index.html" ]; then
             echo "Error: Documentation was not generated correctly"
             ls -la docs/
@@ -50,13 +48,11 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: custom
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './docs'
+          path: ./docs
 
   deploy:
     environment:

@@ -18,7 +18,7 @@ module.exports = {
   ],
   // Main options for JSDoc
   opts: {
-    destination: "./docs/", // Output directory for generated documentation
+    destination: "./docs", // Output directory for generated documentation
     recurse: true, // Recursively include subdirectories
     readme: "./README.md", // Use README.md as the main landing page
     template: "node_modules/better-docs", // Use better-docs theme for modern UI and search
@@ -30,9 +30,7 @@ module.exports = {
     package: "./package.json", // Path to package.json for project info
     staticFiles: {
       include: ["./static"] // Include static files in the output
-    },
-    // Add base URL for GitHub Pages
-    baseUrl: '/jsdoc-experiment/'
+    }
   },
   // Template-specific options
   templates: {
